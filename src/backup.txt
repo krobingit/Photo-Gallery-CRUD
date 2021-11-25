@@ -1,0 +1,18 @@
+[
+ {
+  "name": "Robin.K",
+  "username": "robinlio",
+  "email": "liorobin5@gmail.com",
+  "about": "Web Developer,Football fan",
+  "displaypic": "https://funkylife.in/wp-content/uploads/2021/06/whatsapp-dp-15.jpg",
+  "id": "1"
+ },
+ {
+  "name": "Leo Messi",
+  "username": "leomessi",
+  "email": "leomessi10@gmail.com",
+  "about": "Footballer",
+  "displaypic": "https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg",
+  "id": "2"
+ }
+]
