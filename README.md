@@ -6,6 +6,8 @@
 
 -> can edit and delete the users in the userlist
 
+-> useFormik and yup library for form validations (regex for email and phone number)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
