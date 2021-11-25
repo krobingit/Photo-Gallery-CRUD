@@ -1,16 +1,16 @@
 import { useHistory } from 'react-router-dom';
 import Button from '@mui/material/Button';
-import icon from './diaryIcon.png';
+import wallpaper from './user.jpg';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 export function Home() {
   return (
     <div className="Home">
       <div className="TITLEBOX">
-        <img className="diaryIcon" src={icon} alt="diary-icon" />
-        <h1 className="TITLE">My Diary</h1>
+        <h1 className="TITLE"><AccountCircleIcon style={{fontSize:'3rem',marginRight:"0.5rem"}}/>User Profile Database</h1>
       </div>
-      <img src="https://us.123rf.com/450wm/robuart/robuart1903/robuart190300346/124713387-notebook-to-write-memos-and-personal-information-vector-paper-with-spiral-bind-together-pencil-and-e.jpg?ver=6"
-        alt="diary" className="diaryPic" />
+      <img src={wallpaper}
+        alt="User" className="galleryPic" />
     </div>
   );
 }

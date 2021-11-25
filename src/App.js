@@ -12,6 +12,9 @@ import Paper from '@mui/material/Paper';
 import { UsersList } from './UsersList';
 import { Home, NotFound } from './Home';
 import { AddUser } from './AddUser';
+import { EditUser } from './EditUser';
+import { Profile } from './Profile';
+import { EditProfile } from './EditProfile';
 function App() {
 
   const history = useHistory();
@@ -22,6 +25,7 @@ function App() {
       mode: mode,
     },
   });
+
   return (
     <ThemeProvider theme={Theme}>
       <Paper elevation={4} style={{ minHeight: "100vh"}}>
@@ -34,7 +38,7 @@ function App() {
               <Button variant="text" style={styles} onClick={() => history.push("/create-user")}>Create User</Button>
                 <Button startIcon={Theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />} onClick={() => setMode(mode === "dark" ? "light" : "dark")}
                   style={{ margin: "2rem", fontSize: "1.5rem", color: "inherit", marginLeft: "auto" }}
-                variant="text">{mode === "dark" ? "Light" : "Dark"} Mode</Button>
+                  variant="text">{mode === "Dark" ? "Light" : "Dark"} Mode</Button>
             </Toolbar>
           </AppBar>
         </nav>
@@ -45,6 +49,15 @@ function App() {
             </Route>
             <Route path="/create-user">
               <AddUser />
+            </Route>
+              <Route path="/edit-user/:id">
+              <EditUser />
+            </Route>
+            <Route path="/profile/:id">
+              <Profile />
+            </Route>
+             <Route path="/edit/profile/:id">
+              <EditProfile />
             </Route>
              <Route path="/users">
               <UsersList />
