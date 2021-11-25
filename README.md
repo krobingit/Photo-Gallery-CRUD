@@ -1,12 +1,10 @@
 -> Users List is provided.
 
--> Users can add the info by filling the form (Create-User)
+->  can add the info by filling the form (create-user)
 
--> Users can edit their info provided.
+->  can edit info in their profile by filling the form in the profile.
 
--> Users can add photo to their profile by filling the form in the profile.
-
--> Users can edit and delete the Photos they have.
+-> can edit and delete the users in the userlist
 
 # Getting Started with Create React App
 
