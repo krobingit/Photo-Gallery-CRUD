@@ -1,3 +1,13 @@
+-> Users List is provided.
+
+-> Users can add the info by filling the form (Create-User)
+
+-> Users can edit their info provided.
+
+-> Users can add photo to their profile by filling the form in the profile.
+
+-> Users can edit and delete the Photos they have.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
