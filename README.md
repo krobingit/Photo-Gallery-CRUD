@@ -4,7 +4,7 @@
 
 ->  can edit info in their profile by filling the form in the profile.
 
--> can edit and delete the users 
+-> can edit and delete the users in the userlist
 
 # Getting Started with Create React App
 
