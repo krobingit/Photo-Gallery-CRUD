@@ -1,3 +1,5 @@
+->Deployed LINK https://react-crud-users-ui.netlify.app/
+
 -> Users List is provided.
 
 ->  can add the info by filling the form (create-user)
@@ -5,6 +7,8 @@
 ->  can edit info in their profile by filling the form in the profile.
 
 -> can edit and delete the users in the userlist
+
+-> useFormik and yup library for form validations (regex for email and phone number)
 
 # Getting Started with Create React App
 
