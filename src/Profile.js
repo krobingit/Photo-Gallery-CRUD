@@ -7,24 +7,16 @@ import EditIcon from '@mui/icons-material/Edit';
 export function Profile() {
  const { id } = useParams();
  const history = useHistory();
- const [user, setUser] = useState([]);
- const getUser = () => {
-  fetch(`https://6166c4da13aa1d00170a66f9.mockapi.io/list-users/${id}`)
-   .then((response) => response.json())
-   .then((data) => setUser(data));
+  const [user, setUser] = useState([]);
+   //loading animation
+  let [Loading, setLoading] = useState(false);
+  const getUser = () => {
+       setLoading(true);
+    fetch(`https://6166c4da13aa1d00170a66f9.mockapi.io/list-users/${id}`)
+      .then((response) => response.json())
+      .then((data) => setUser(data)).finally(() => setLoading(false));
  };
  useEffect(getUser, [id]);
- //loading animation
-  let [Loading, setLoading] = useState(false);
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-    setLoading(false)
-
-    },700)
-  }, [])
-
-
 
  return (
 

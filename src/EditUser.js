@@ -32,7 +32,9 @@ function UpdateUser({ user }) {
     updateUser(updatedUser)
    },
   })
- const history = useHistory();
+  const history = useHistory();
+   //loading animation
+ let [Loading, setLoading] = useState(false);
  const updateUser = (updatedUser) => {
   fetch(`https://6166c4da13aa1d00170a66f9.mockapi.io/list-users/${user.id}`,
    {
@@ -50,8 +52,7 @@ function UpdateUser({ user }) {
   }
  };
 
- //loading animation
- let [Loading, setLoading] = useState(false);
+
  useEffect(() => {
   setLoading(true);
   setTimeout(() => {

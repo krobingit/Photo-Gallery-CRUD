@@ -8,21 +8,19 @@ import ClipLoader from "react-spinners/ClipLoader";
 
 export function UsersList() {
   const [users, setUsers] = useState([]);
+    //loading animation
+     let [Loading, setLoading] = useState(false);
   const getUsers = () => {
+        setLoading(true);
     fetch("https://6166c4da13aa1d00170a66f9.mockapi.io/list-users")
       .then((response) => response.json())
-      .then((data) => setUsers(data));
+      .then((data) => setUsers(data))
+      .finally(() => setLoading(false));
   };
   useEffect(getUsers, []);
 
-  //loading animation
-   let [Loading, setLoading] = useState(false);
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-    setLoading(false)
-    },500)
-  },[])
+
+
   const deleteUser = (id) => {
     fetch(`https://6166c4da13aa1d00170a66f9.mockapi.io/list-users/${id}`,
       {
